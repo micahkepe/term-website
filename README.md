@@ -1,4 +1,4 @@
-# term-website
+# term-website 💻
 
 An experimental, configurable terminal website that I built for fun. The website
 is a client-side terminal emulator that runs a mock backend to simulate a shell
@@ -68,9 +68,9 @@ command should be a class that extends the `Command` class and implements the
 
 ### Terminal Themes
 
-The website supports multiple themes. The default theme is `Dracula`, but
-`CatpuccinMocha` and `SolarizedDark` are also available. You can add your own
-themes by creating a new `ITheme` implementation in the `src/client/termina;/themes.ts`
+The website supports multiple themes. The default theme is `dracula`, but
+`catpuccin-mocha` and `solarized-dark` are also available. You can add your own
+themes by creating a new `ITheme` implementation in the `src/client/terminal/themes.ts`
 file.
 
 You can specify the default terminal theme in the `default_theme` field of the
