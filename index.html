@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10172a" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <title>Micah Kepe</title>
+    <meta
+      name="description"
+      content="Micah Kepe is a computer science student studying at Rice 
+        University in Houston, TX. Discover more about Micah's academic journey, 
+        projects, and interests."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="google-site-verification"
+      content="_1M86tU5dtd1DAqe4ZUa98DgjxjDsetRfTXGsi8dVm0"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="canonical" href="https://micahkepe.com/" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script defer type="module" src="/src/main.ts"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.6/iconify-icon.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <p id="name-header">Micah Kepe</p>
+        👨‍💻
+      </h1>
+      <h2>yup, i made my website a terminal</h2>
+    </header>
+    <main>
+      <terminal-component></terminal-component>
+    </main>
+
+    <footer>
+      <section id="misc-links">
+        <a href="https://v1.micahkepe.com/" class="external-link">
+          <p>v1 site</p>
+          <iconify-icon
+            icon="material-symbols:chevron-right-rounded"
+            width="24"
+            height="24"
+            style="color: #d64a48"
+          ></iconify-icon>
+        </a>
+
+        <a
+          href="https://github.com/micahkepe/micahkepe.github.io"
+          class="external-link"
+        >
+          <p>source code</p>
+          <iconify-icon
+            icon="material-symbols:chevron-right-rounded"
+            width="24"
+            height="24"
+            style="color: #d64a48"
+          ></iconify-icon>
+        </a>
+
+        <a href="https://micahkepe.com/blog" class="external-link">
+          <p>blog</p>
+          <iconify-icon
+            icon="material-symbols:chevron-right-rounded"
+            width="24"
+            height="24"
+            style="color: #d64a48"
+          ></iconify-icon>
+        </a>
+      </section>
+
+      <section id="socials-container">
+        <a href="https://github.com/micahkepe" target="_blank" rel="noopener">
+          <iconify-icon
+            icon="mdi:github"
+            width="24"
+            height="24"
+            style="color: #ccc"
+          ></iconify-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/micah-kepe/"
+          target="_blank"
+          rel="noopener"
+        >
+          <iconify-icon
+            icon="mdi:linkedin"
+            width="24"
+            height="24"
+            style="color: #ccc"
+          ></iconify-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/micah-kepe/"
+          target="_blank"
+          rel="noopener"
+        >
+          <iconify-icon
+            icon="mdi:instagram"
+            width="24"
+            height="24"
+            style="color: #ccc"
+          ></iconify-icon>
+        </a>
+      </section>
+    </footer>
+
+    <!-- Templates -->
+    <template id="terminal-component-template">
+      <link rel="stylesheet" href="styles/terminal.css" />
+      <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
+      <section class="terminal-container"></section>
+    </template>
+  </body>
+</html>

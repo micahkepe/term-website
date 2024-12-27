@@ -1,0 +1,141 @@
+/* Global styles */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf"),
+    local("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf"), local("ttf");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body,
+html {
+  font-family: "JetBrains Mono", monospace;
+  overflow: auto;
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  flex-direction: column;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header,
+footer {
+  text-align: center;
+  margin: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    p {
+      margin: 0;
+      padding: 0;
+      text-decoration: underline #d64a48;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #ccc;
+  }
+}
+
+footer {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  #socials-container {
+    a {
+      text-decoration: none;
+    }
+
+    iconify-icon:hover {
+      color: #fff !important;
+      transition: color 0.2s ease;
+    }
+  }
+
+  #misc-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .external-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ccc;
+
+    iconify-icon {
+      display: block;
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  .external-link:hover {
+    color: #fff !important;
+    text-decoration: underline #d64a48;
+    transition: color 0.2s ease;
+
+    iconify-icon {
+      transition: transform 0.2s ease;
+      transform: translateX(0.2rem);
+    }
+  }
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+}
