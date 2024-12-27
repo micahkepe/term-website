@@ -11,9 +11,9 @@
     "doc": "typedoc --entryPointStrategy expand src/ types/",
     "test": "cypress run -b chrome",
     "report": "nyc report",
-    "clean": "rm -rf build/*",
-    "predeploy": "npm run clean && && npm run build",
-    "deploy": "gh-pages -d build -m 'deploying to gh-pages'"
+    "clean": "rm -rf dist/*",
+    "predeploy": "npm run clean && npm run build",
+    "deploy": "gh-pages -d dist -m 'deploying to gh-pages'"
   },
   "author": "Micah Kepe",
   "license": "MIT",
