@@ -6,21 +6,23 @@
     <meta name="theme-color" content="#10172a" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/browserconfig.xml" />
-    <title>Micah Kepe | Termnal</title>
     <meta name="robots" content="index, follow" />
-    <meta
-      name="google-site-verification"
-      content="_1M86tU5dtd1DAqe4ZUa98DgjxjDsetRfTXGsi8dVm0"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-
-    <script defer type="module" src="/src/main.ts"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.6/iconify-icon.min.js"></script>
+    <!-- Title created dynamically from config file -->
+    <script defer type="module" src="./src/main.ts"></script>
+    <script
+      defer
+      src="https://code.iconify.design/iconify-icon/1.0.6/iconify-icon.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/xterm@5.3.0/lib/xterm.min.js"
+    ></script>
   </head>
 
   <body>
@@ -30,8 +32,6 @@
 
     <!-- Templates -->
     <template id="terminal-component-template">
-      <link rel="stylesheet" href="styles/terminal.css" />
-      <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.js"></script>
       <section class="terminal-container"></section>
     </template>
   </body>

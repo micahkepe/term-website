@@ -1,6 +1,8 @@
 {
   "name": "term-website",
+  "homepage": "https://term.micahkepe.com",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "start": "vite",
     "dev": "tsc --watch",
