@@ -9,6 +9,7 @@ import { rmCommand } from "./rm";
 import { cdCommand } from "./cd";
 import { themeCommand } from "./theme";
 import { emailCommand } from "./email";
+import { repoCommand } from "./repo";
 
 /**
  * List of all available commands. This list is used to generate the help command.
@@ -28,4 +29,5 @@ export const commands: Command[] = [
   cdCommand,
   themeCommand,
   emailCommand,
+  repoCommand,
 ];

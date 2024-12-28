@@ -1,10 +1,12 @@
-# term-website 💻
+# [term-website](https://term.micahkepe.com/) 💻
 
 An experimental, configurable terminal website that I built for fun. The website
 is a client-side terminal emulator that runs a mock backend to simulate a shell
 environment. The website is built with vanilla TypeScript, HTML, and CSS. This
 site can be used as a template portfolio website or be modified to be a
 full-fledged terminal emulator.
+
+> There's also some fun easter eggs in the site, so have fun exploring!
 
 ![Demo of the terminal website in action](./public/assets/demos/demo.gif)
 

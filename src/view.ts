@@ -50,44 +50,18 @@ export class View {
   private terminal: TerminalComponent;
 
   constructor() {
-    this.initTitleAndHeader();
-    this.updateFooterDate();
+    this.initTitle();
     this.terminal = document.querySelector(
       "terminal-component",
     ) as TerminalComponent;
   }
 
   /**
-   * Initializes the page's title and the name header to the values set in the
-   * `config.json` file (`page_title` and `name`, repsectively)
+   * Initializes the page's title to the `page_title` in the config.json file
    * @returns {void}
    */
-  private initTitleAndHeader(): void {
-    const nameHeader = document.querySelector("#name-header") as HTMLElement;
-
-    if (!(nameHeader instanceof HTMLElement)) {
-      console.log("Name header element not found");
-      return;
-    }
-
-    nameHeader.innerText = config.author.name;
+  private initTitle(): void {
     document.title = config.page_title;
-  }
-
-  /**
-   * Updates the current year in the footer text.
-   * @private
-   * @returns {void}
-   */
-  private updateFooterDate(): void {
-    const footer = document.querySelector("footer");
-    if (footer) {
-      const year = new Date().getFullYear();
-      footer.insertAdjacentHTML(
-        "beforeend",
-        `<p>&copy; ${year} Micah Kepe</p>`,
-      );
-    }
   }
 
   /**

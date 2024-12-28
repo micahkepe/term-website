@@ -314,7 +314,9 @@ export class TerminalComponent extends HTMLElement {
     if (!this.terminal) return;
 
     this.terminal.writeln(`${Date().toLocaleString()}`);
-    this.terminal.writeln("Welcome to Micah Kepe's terminal, the nerd shell.");
+    this.terminal.writeln(
+      `Welcome to ${config.author.name}'s terminal, the nerd shell.`,
+    );
     this.terminal.writeln(
       `Type \`${AnsiCodes.Cyan}help${AnsiCodes.Reset}\` for a list of commands.`,
     );

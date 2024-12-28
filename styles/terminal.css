@@ -1,5 +1,5 @@
 /**
-* Original xterm.js CSS 
+* Original xterm.js CSS
 */
 
 /**
@@ -194,7 +194,7 @@
 }
 
 /**
-* Start of custom styling/ modifications 
+* Start of custom styling/ modifications
 */
 
 .terminal-container {
@@ -215,4 +215,9 @@
 
 .xterm * {
   scrollbar-width: none;
+}
+
+.xterm-screen {
+  width: 95vw !important;
+  height: 90vh !important;
 }

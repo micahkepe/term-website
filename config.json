@@ -2,9 +2,9 @@
   "author": {
     "name": "Micah Kepe",
     "email": "micahkepe@gmail.com",
-    "repo_url": "https://github.com/micahkepe/micahkepe.github.io"
+    "repo_url": "https://github.com/micahkepe/term-website"
   },
-  "page_title": "Micah Kepe",
-  "default_theme": "Dracula",
+  "page_title": "Micah Kepe | Terminal",
+  "default_theme": "dracula",
   "guest_username": "websurfer"
 }
