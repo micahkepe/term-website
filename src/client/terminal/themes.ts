@@ -7,14 +7,14 @@
 import { ITheme } from "@xterm/xterm";
 
 /**
- * A copy of the Catpuccin Mocha palette. Some colors are not perfect 1-1
+ * A copy of the Catppuccin Mocha palette. Some colors are not perfect 1-1
  * matches, but I have put the closest palette colors for those and have
  * commented the Catpuccin color chosen.
  *
  * Adapted from:
  * https://catppuccin.com/palette
  */
-export const CatpuccinMochaTheme: ITheme = {
+export const CatppuccinMochaTheme: ITheme = {
   background: "#1e1e2e",
   black: "#11111b",
   blue: "#89b4fa",
@@ -83,7 +83,7 @@ export const SolarizedDark: ITheme = {
  * The available themes for the terminal emulator.
  */
 export const TermThemes: Map<string, ITheme> = new Map([
-  ["catpuccin-mocha", CatpuccinMochaTheme],
+  ["catppuccin-mocha", CatppuccinMochaTheme],
   ["dracula", DraculaTheme],
   ["solarized-dark", SolarizedDark],
 ]);
