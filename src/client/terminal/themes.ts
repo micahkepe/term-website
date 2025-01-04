@@ -80,10 +80,35 @@ export const SolarizedDark: ITheme = {
 };
 
 /**
+ * Kanagawa NVim Theme for the terminal emulator.
+ * Adapted from the Kanagawa NVim palette.
+ */
+export const KanagawaTheme: ITheme = {
+  background: "#1F1F28", // sumiInk1 - Default background
+  foreground: "#DCD7BA", // fujiWhite - Default foreground
+  black: "#16161D", // sumiInk0 - Darker background
+  brightBlack: "#54546D", // sumiInk4 - Darker foreground (line numbers, borders)
+  red: "#E82424", // samuraiRed - Diagnostic Error
+  brightRed: "#FF5D62", // peachRed - Standout specials 2
+  green: "#98BB6C", // springGreen - Strings
+  brightGreen: "#76946A", // autumnGreen - Git Add
+  yellow: "#DCA561", // autumnYellow - Git Change
+  brightYellow: "#E6C384", // carpYellow - Identifiers
+  blue: "#7E9CD8", // crystalBlue - Functions and Titles
+  brightBlue: "#7FB4CA", // springBlue - Specials and builtin functions
+  magenta: "#957FB8", // oniViolet - Statements and Keywords
+  brightMagenta: "#D27E99", // sakuraPink - Numbers
+  cyan: "#6A9589", // waveAqua1 - Diagnostic Info
+  brightCyan: "#7AA89F", // waveAqua2 - Types
+  selectionBackground: "#223249", // waveBlue1 - Visual selection background
+};
+
+/**
  * The available themes for the terminal emulator.
  */
 export const TermThemes: Map<string, ITheme> = new Map([
   ["catppuccin-mocha", CatppuccinMochaTheme],
   ["dracula", DraculaTheme],
   ["solarized-dark", SolarizedDark],
+  ["kanagawa", KanagawaTheme],
 ]);

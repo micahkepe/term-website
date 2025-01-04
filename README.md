@@ -104,6 +104,7 @@ Update the default theme in `config.json`. Available themes include:
 - `dracula`
 - `catpuccin-mocha`
 - `solarized-dark`
+- `kanagawa`
 
 To add a new theme, implement the `ITheme` interface in
 `src/client/terminal/themes.ts`.
