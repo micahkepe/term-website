@@ -285,6 +285,8 @@ export class TerminalComponent extends HTMLElement {
     this.initializeTerminal()
       .then((terminal) => {
         this.terminal = terminal;
+        this.terminal?.refresh(0, this.terminal.rows - 1); // Force refresh
+        setTimeout(() => this.fitAddon?.fit(), 50); // Try to ensure proper fitting after load
         this.writeWelcomeMessage();
         this.setupKeyboardHandling();
       })
